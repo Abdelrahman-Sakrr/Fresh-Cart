@@ -24,7 +24,7 @@ import Checkout from './Components/Checkout/Checkout'
 function App() {
   // const [count, setCount] = useState(0)
 
-  let routing = createHashRouter([
+  let routing = createBrowserRouter([
     {path:"" , element:<Layout/> , children:[
       {path:"home", element:<ProtectedRoute><Home/></ProtectedRoute> },
       {path:"checkout", element:<ProtectedRoute><Checkout/></ProtectedRoute> },
